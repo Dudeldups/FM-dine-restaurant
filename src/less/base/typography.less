@@ -1,0 +1,26 @@
+@import "../abstracts/index.less";
+
+@font-face {
+  font-family: "League Spartan";
+  font-weight: 200 700;
+  src: url("/assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+
+:where(body) {
+  font: 400 1rem/150% "League Spartan", sans-serif;
+  color: @clr-secondary1;
+}
+
+.bold() {
+  font-weight: 700;
+}
+
+.light() {
+  font-weight: 200;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  line-height: 110%;
+  .bold;
+  color: @clr-secondary2;
+}
