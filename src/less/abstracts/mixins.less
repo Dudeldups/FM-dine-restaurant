@@ -1,10 +1,14 @@
 .get-clamp(
-  @min-size,
-  @max-size,
-  @min-breakpoint,
-  @max-breakpoint,
+  @min-size-input,
+  @max-size-input,
+  @min-breakpoint-input,
+  @max-breakpoint-input,
   @unit: vw
 ) {
+  @min-size: .convert(@min-size-input) [];
+  @max-size: .convert(@max-size-input) [];
+  @min-breakpoint: .convert(@min-breakpoint-input) [];
+  @max-breakpoint: .convert(@max-breakpoint-input) [];
   @slope: ((@max-size - @min-size) / (@max-breakpoint - @min-breakpoint));
   @slope-to-unit: round(unit(@slope * 100), 2);
   @intercept-rem: round(@min-size - @slope * @min-breakpoint, 2);

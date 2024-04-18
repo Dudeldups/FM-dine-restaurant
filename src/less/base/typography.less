@@ -7,7 +7,10 @@
 }
 
 :where(body) {
-  font: 400 1rem/150% "League Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: .get-clamp(1rem, 1.25rem, @bp-xs, @bp-md) [];
+  line-height: 150%;
   color: @clr-secondary1;
 }
 
@@ -23,4 +26,22 @@
   line-height: 110%;
   .bold;
   color: @clr-secondary2;
+}
+
+.h-xl {
+  font-weight: 300;
+  font-size: .get-clamp(2rem, 3rem, @bp-xs, @bp-md) [];
+  line-height: .get-clamp(2.5rem, 4rem, @bp-xs, @bp-md) [];
+  letter-spacing: -0.025rem;
+
+  .mq(@bp-md, {
+    font-size: 3rem;
+    font-size: .get-clamp(3rem, 5rem, @bp-md, @bp-lg) [];
+    line-height: .get-clamp(4rem, 5rem, @bp-md, @bp-lg) []; 
+    letter-spacing: -0.0375rem;
+  });
+
+  .mq(@bp-lg, {
+    letter-spacing: -0.0625rem;
+  });
 }
