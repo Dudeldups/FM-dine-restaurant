@@ -12,15 +12,32 @@
     <title>Dine Restaurant</title>
   </head>
   <body>
-    <header>
-      <h1 class="h-xl">Hello :)</h1>
-      <p>This is a test</p>
-      <a href="booking.html">Booking</a>
-    </header>
+    <div id="content">
+      <header>
+        <img src="/assets/images/logo.svg" alt="" />
+        <h1 class="h-xl">Exquisite dining since 1989</h1>
+        <p>
+          Experience our seasonal menu in beautiful country surroundings. Eat
+          the freshest produce from the comfort of our farmhouse.
+        </p>
+        <a href="booking.html" class="btn">Book a table</a>
+        <picture>
+          <source
+            media="(min-width: 64rem)"
+            srcset="/assets/images/homepage/hero-bg-desktop.jpg" />
+          <source
+            media="(min-width: 43.75rem)"
+            srcset="/assets/images/homepage/hero-bg-tablet.jpg" />
+          <img
+            src="/assets/images/homepage/hero-bg-mobile.jpg"
+            alt="Dining table with a view of the countryside" />
+        </picture>
+      </header>
 
-    <main></main>
+      <main></main>
 
-    <footer></footer>
+      <footer></footer>
+    </div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
