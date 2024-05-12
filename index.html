@@ -12,9 +12,15 @@
     <title>Dine Restaurant</title>
   </head>
   <body>
-    <div id="content">
-      <header>
-        <img src="assets/images/logo.svg" alt="" />
+    <div class="home">
+      <header class="header">
+        <a href="/">
+          <img
+            src="assets/images/logo.svg"
+            alt="dine logo"
+            aria-hidden="true"
+            class="logo" />
+        </a>
         <h1 class="h-xl">Exquisite dining since 1989</h1>
         <p>
           Experience our seasonal menu in beautiful country surroundings. Eat
@@ -36,7 +42,11 @@
 
       <main></main>
 
-      <footer></footer>
+      <footer class="footer">
+        <div>
+          <img src="assets/images/logo.svg" alt="" />
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="/src/main.ts"></script>

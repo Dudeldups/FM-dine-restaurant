@@ -12,16 +12,53 @@
     <title>Dine Restaurant</title>
   </head>
   <body>
-    <div id="content">
-      <header>
-        <h1 class="h-xl">Booking</h1>
-        <p>This is a test</p>
-        <a href="/">Home</a>
+    <div class="booking">
+      <header class="header">
+        <a href="/">
+          <img
+            src="/assets/images/logo.svg"
+            alt="dine logo"
+            aria-hidden="true"
+            class="logo" />
+        </a>
+        <h1 class="h-xl">Reservations</h1>
+        <p>
+          We can’t wait to host you. If you have any special requirements please
+          feel free to call on the phone number below. We’ll be happy to
+          accommodate you.
+        </p>
+        <button class="reserve-button">Reserve place</button>
       </header>
 
       <main></main>
 
-      <footer></footer>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <a href="/">
+            <img
+              src="/assets/images/logo.svg"
+              alt="dine logo"
+              aria-hidden="true"
+              class="footer__logo logo" />
+          </a>
+          <div class="address-wrapper">
+            <address class="footer__address">
+              <p>Marthwaite, Sedbergh</p>
+              <p>Cumbria</p>
+              <p>+00 44 123 4567</p>
+            </address>
+            <div class="open-times">
+              <h2 class="open-times__heading">Open times</h2>
+              <dl class="open-times__details">
+                <dt>Mon - Fri:</dt>
+                <dd>09:00 AM - 10:00 PM</dd>
+                <dt>Sat - Sun:</dt>
+                <dd>09:00 AM - 11:30 PM</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script type="module" src="../src/main.ts"></script>
